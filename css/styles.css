@@ -1,0 +1,404 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.6;
+	background-color: #FAFAFA;
+	color: #3E3E3E;
+}
+
+p {
+	font-size: 1em;
+	font-weight: 300; 
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 1.2em;
+    font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	padding: 0;
+}
+
+img {
+	width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header {
+	margin-bottom: 3em;
+}
+
+.my-name {
+	margin-top: 0.5em;
+	font-size: 2em;
+}
+
+.main-nav a, .foot-nav a {
+	display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    margin: 0.2em;
+    padding: 0.8em;
+    font-size: 0.9em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	background-color: #8BC34A;
+	color: #FAFAFA; 
+}
+
+
+
+/* ---- Layout Containers ---- */
+
+.about-section {
+	margin-bottom: 3em;
+}
+
+.container-absolute {
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.container {
+	padding: 0 1em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.portfolio-bg {
+	background-color: #fff;
+	padding-top: 3em;
+	padding-bottom: 2em;
+}
+
+.portfolio-bg + .portfolio-bg {
+	padding-top: 0;
+}
+
+.testimonial-section {
+	border-top: 1px solid #eee;
+}
+
+.testimonial-content {
+	margin-bottom: 5em;
+}
+
+.testimonial-content:last-child {
+	margin-bottom: 2em;
+}
+
+.contact-bg {
+	background-color: rgba(224, 171, 38, 0.19);
+}
+
+.contact-section {
+	padding: 3em 0;
+}
+
+.responsive-footer, .main-footer {
+	border-top: 1px solid #eee;
+	margin: 0 1em;
+	padding: 2em 0;
+	font-weight: 900;
+}
+
+.main-footer {
+	display: none;
+}
+
+
+/* ---- Page Elements ---- */
+
+.about-img {
+	width: 100%;
+	border-radius: 50px 5px;
+    box-shadow: 0 6px 0 0 #D93334;
+}
+
+.absolute-ribbon {
+	position: absolute;
+	top: -27px;
+    right: -30px;
+    width: 85px;
+}
+
+.portfolio-content {
+	margin-bottom: 2em;
+	vertical-align: top;
+}
+
+.portfolio-content h3 {
+	margin: 1.5em 0 1em 0;
+}
+
+.portfolio-content p {
+	padding: 0 10px;
+}
+
+.section-name {
+	margin-bottom: 2em;
+	text-transform: uppercase;
+}
+
+.testimonial-section .section-name{
+	margin-top: 2em;
+}
+
+.contact-section .section-name {
+	margin-bottom: 1em;
+}
+
+.contact-section p {
+	margin: 0;
+	margin-bottom: 1em; 
+}
+
+.contact-deets {
+	font-weight: 700;
+	margin-left: 20px; 
+}
+
+.rounded-img {
+	border-radius: 100%;
+	width: 30%;
+}
+
+.test-quote {
+	font-style: italic;
+	font-size: 0.95em;
+	color: #868686;
+	padding: 0.2em 3em 1em;
+	margin: 0;
+}
+
+.test-name {
+	margin: 0;
+	color: #005172;
+	font-weight: 300;
+}
+
+.job-title {
+	padding-bottom: 3px;
+	border-bottom: 1px dotted #222;
+	font-weight: 400;
+    color: #FA8366;
+}
+
+.my-name-footer, .to-top-footer {	
+    display: inline-block;
+    width: 50%;
+}
+
+.my-name-footer {
+	text-align: left;
+	margin-right: -5px;
+}
+
+.to-top-footer {
+	text-align: right;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-nav li, .foot-nav li {
+		display: inline-block;
+	}
+
+	.main-nav a, .foot-nav a{
+		background-color: transparent;
+	}
+
+	.main-nav a {
+		font-size: 1em;
+		border-bottom: 2px solid transparent; 
+	}
+
+	.main-nav a:hover {
+		background-color: transparent;
+		color: #8BC34A;
+		border-bottom: 2px solid #222;
+	}
+
+	.about-col {
+		width: 50%;
+    	display: inline-block;
+	}
+
+	.container-absolute{		
+    	padding: 1em;
+	}
+
+	.absolute-ribbon {
+		top: -12px;
+	    right: -17px;
+	    width: 115px;
+	}
+
+	.about-section p{
+    	font-size: 1.5em;
+    	float: left;
+    	padding: 1em 1em 0;
+    	margin: 0;
+    	text-align: left;
+	}
+
+	.portfolio-content {
+	    display: inline-block;
+	    width: 49%;
+	    margin-right: -4px;
+	    padding: 1em;
+	}
+
+	.portfolio-content:nth-of-type(2n) {
+		margin-right: 0;
+	}
+
+	.testimonial-content {
+	    display: inline-block;
+	    width: 50%;
+	    margin-right: -4px;
+	}
+
+	.testimonial-content:nth-of-type(2n) {
+	    margin-right: 0;
+	    vertical-align: top;
+	}
+
+	.responsive-footer {
+		display: none;
+	}
+
+	.my-name-footer {
+		width: 39%;
+	}
+
+	.main-footer {
+		display: block;
+	}
+
+	.foot-nav {
+		display: inline-block;
+		width: 61%;
+		text-align: right;
+	}
+
+	.foot-nav a:hover {
+		color: #8BC34A;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		padding: 3em 1em 0;
+	}
+
+	.main-nav, .my-name {
+		display: inline-block;
+	}
+
+	.my-name {
+		width: 48%;
+	}
+
+	.main-nav {
+		width: 52%;
+	}
+
+	.my-name {
+		text-align: left;
+		margin-right: -4px;
+	}
+
+	.main-nav {		
+		text-align: right;
+		vertical-align: top;
+	}
+
+	.portfolio-content {
+		width: 33%;
+		padding: 0.5em;
+	}
+
+	.portfolio-content p, .contact-section p {
+		font-size: 1.1em;
+	}
+
+	.portfolio-content:nth-of-type(2n) {
+		margin-right: -4px;
+	}
+
+	.portfolio-content:last-child {
+		margin-right: 0;
+	}
+
+	.portfolio-content:nth-of-type(3n) {
+		margin-right: 0;
+	}
+
+	.testimonial-content {
+	    width: 33%;
+	}
+
+	.testimonial-content:nth-of-type(2n) {
+	    margin-right: -4px;
+	}
+
+	.testimonial-content:last-child {
+	    margin-right: 0;
+	    vertical-align: top;
+	}
+
+	.test-quote {
+	    padding-top: 0.8em;
+	    height: 105px;
+	    font-size: 0.95em;
+	}
+}
+
+
+
+
