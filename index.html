@@ -1,19 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Vincent Filice's Portfolio</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,900,300,300italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Vincent Filice's Portfolio</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,900,300,300italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
 
-	<div class="container">
-		<header class="main-header">
-			<h1 class="my-name">Vincent Filice</h1>
-			<nav class="main-nav">
+		<div class="container">
+			<header class="main-header">
+				<h1 class="my-name">Vincent Filice</h1>
+				<nav class="main-nav">
+					<ul>
+						<li><a href="#about-me">Home</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#praises">Modest Praises</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+		<div class="container about-bg">
+			<div id="about-me" class="about-section clearfix">
+				<div class="container-absolute about-col">
+					<img src="img/me-on-comp1.jpg" alt="Photograph of Vincent Filice" class="about-img"/>
+					<img src="img/business-icons-068.svg" alt="Golden badge engraved with the word hot" class="absolute-stamp"/>
+				</div>
+				<p class="about-col">Hi! I'm a <span>front-end developer</span> who loves <span>responsive design</span> and <span>css</span>. I recently finished a degree in <span>front-end web development</span> at Treehouse and I am excited to put all my skills to use!</p>
+			</div>
+		</div>
+
+		<div id="portfolio" class="container portfolio-bg">
+			<h2 class="section-name">Portfolio</h2>
+			<div class="portfolio-content">
+				<img src="img/portfolio-1.png" alt="Marketing page project front page"/>
+				<h3>Marketing Page</h3>
+				<p>This project shows the front page of a marketing website meant for specific business I'm interested in.</p>
+			</div>
+			<div class="portfolio-content">
+				<img src="img/portfolio-2.png" alt="Search page project front page"/>
+				<h3>Search Page</h3>
+				<p>This project shows the front page of a marketing website meant for specific business I'm interested in.</p>
+			</div>
+			<div class="portfolio-content">
+				<img src="img/portfolio-3.png" alt="Travel app project screen"/>
+				<h3>Travel App</h3>
+				<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+			</div>
+			<div class="portfolio-content">
+				<img src="img/portfolio-4.png" alt="Calculator project screen"/>
+				<h3>Calculator</h3>
+				<p>Someone can enter in the number they want, and press the big blue button and get the result.</p>
+			</div>
+			<div class="portfolio-content">
+				<img src="img/portfolio-5.png" alt="Photo gallery project front page"/>
+				<h3>Photo Gallery</h3>
+				<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+			</div>
+			<div class="portfolio-content">
+				<img src="img/portfolio-6.png" alt="Map of favourite spots app screen"/>
+				<h3>Map of Favourite Spots</h3>
+				<p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
+			</div>
+			<div class="portfolio-content">
+				<img src="img/portfolio-7.png" alt="Media player user interface screen"/>
+				<h3>Media Player</h3>
+				<p>This project shows a media player which revolutionized the way humanity experiences visual stimulation.</p>
+			</div>
+			<div class="portfolio-content">
+				<img src="img/portfolio-8.png" alt="Video hosting website project front page"/>
+				<h3>Youtube Killer</h3>
+				<p>This project shows the front page of a video website that aimed to take over Youtube. It failed.</p>
+			</div>
+		</div>
+
+		<div id="praises" class="container portfolio-bg">
+			<div class="testimonial-section">
+				<h2 class="section-name">Modest Praises</h2>
+				<div class="testimonial-content">
+					<img src="img/test-pic-1.jpg" alt="Photograph of Pable Alto" class="rounded-img"/>
+					<p class="test-quote">"Single greatest human I've ever had the pleasure of working with. Cleaned the pool with gusto and a go getter attitude"</p>
+					<p class="test-name">Pablo Alto - <span class="job-title">CEO of Podogu</span></p>
+				</div>
+				<div class="testimonial-content">
+					<img src="img/test-pic-2.jpg" alt="Photograph of Billy Cartel" class="rounded-img"/>
+					<p class="test-quote">"I've never met this individual before and I want to know how you got my phone number"</p>
+					<p class="test-name">Billy Cartel - <span class="job-title">Marketing Director at Swizzle</span></p>
+				</div>
+				<div class="testimonial-content">
+					<img src="img/test-pic-3.jpg" alt="Photograph of Mario Luganis" class="rounded-img"/>
+					<p class="test-quote">"He's a rugged, handsome man whose skills lend more to the glitz and glamour of the catwalk"</p>
+					<p class="test-name">Mario Luganis - <span class="job-title">Head UX Geek at Dongu Labs</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container contact-bg">
+			<div id="contact" class="contact-section">
+				<h2 class="section-name">Contact</h2>
+				<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you</p>
+				<p>Phone<span class="contact-deets">(510) 809-7053</span></p>
+				<p>Email<span class="contact-deets">filice1101@gmail.com</span></p>
+			</div>		
+		</div>
+
+		<footer class="responsive-footer">
+			<span class="my-name-footer">Vincent Filice</span>
+			<a href="" class="to-top-footer">Back to top</a>
+		</footer>
+
+		<footer class="main-footer">
+			<span class="my-name-footer">Vincent Filice</span>
+			<nav class="foot-nav">
 				<ul>
 					<li><a href="#about-me">Home</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
@@ -21,109 +123,7 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-		</header>
-	</div>
+		</footer>
 
-	<div class="container about-bg">
-		<div id="about-me" class="about-section clearfix">
-			<div class="container-absolute about-col">
-				<img src="img/me-on-comp1.jpg" alt="Photograph of Vincent Filice" class="about-img"/>
-				<img src="img/business-icons-068.svg" alt="Golden badge engraved with the word hot" class="absolute-stamp"/>
-			</div>
-			<p class="about-col">Hi! I'm a <span>front-end developer</span> who loves <span>responsive design</span> and <span>css</span>. I recently finished a degree in <span>front-end web development</span> at Treehouse and I am excited to put all my skills to use!</p>
-		</div>
-	</div>
-
-	<div id="portfolio" class="container portfolio-bg">
-		<h2 class="section-name">Portfolio</h2>
-		<div class="portfolio-content">
-			<img src="img/portfolio-1.png" alt="Marketing page project front page"/>
-			<h3>Marketing Page</h3>
-			<p>This project shows the front page of a marketing website meant for specific business I'm interested in.</p>
-		</div>
-		<div class="portfolio-content">
-			<img src="img/portfolio-2.png" alt="Search page project front page"/>
-			<h3>Search Page</h3>
-			<p>This project shows the front page of a marketing website meant for specific business I'm interested in.</p>
-		</div>
-		<div class="portfolio-content">
-			<img src="img/portfolio-3.png" alt="Travel app project screen"/>
-			<h3>Travel App</h3>
-			<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-		</div>
-		<div class="portfolio-content">
-			<img src="img/portfolio-4.png" alt="Calculator project screen"/>
-			<h3>Calculator</h3>
-			<p>Someone can enter in the number they want, and press the big blue button and get the result.</p>
-		</div>
-		<div class="portfolio-content">
-			<img src="img/portfolio-5.png" alt="Photo gallery project front page"/>
-			<h3>Photo Gallery</h3>
-			<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-		</div>
-		<div class="portfolio-content">
-			<img src="img/portfolio-6.png" alt="Map of favourite spots app screen"/>
-			<h3>Map of Favourite Spots</h3>
-			<p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
-		</div>
-		<div class="portfolio-content">
-			<img src="img/portfolio-7.png" alt="Media player user interface screen"/>
-			<h3>Media Player</h3>
-			<p>This project shows a media player which revolutionized the way humanity experiences visual stimulation.</p>
-		</div>
-		<div class="portfolio-content">
-			<img src="img/portfolio-8.png" alt="Video hosting website project front page"/>
-			<h3>Youtube Killer</h3>
-			<p>This project shows the front page of a video website that aimed to take over Youtube. It failed.</p>
-		</div>
-	</div>
-
-	<div id="praises" class="container portfolio-bg">
-		<div class="testimonial-section">
-			<h2 class="section-name">Modest Praises</h2>
-			<div class="testimonial-content">
-				<img src="img/test-pic-1.jpg" alt="Photograph of Pable Alto" class="rounded-img"/>
-				<p class="test-quote">"Single greatest human I've ever had the pleasure of working with. Cleaned the pool with gusto and a go getter attitude"</p>
-				<p class="test-name">Pablo Alto - <span class="job-title">CEO of Podogu</span></p>
-			</div>
-			<div class="testimonial-content">
-				<img src="img/test-pic-2.jpg" alt="Photograph of Billy Cartel" class="rounded-img"/>
-				<p class="test-quote">"I've never met this individual before and I want to know how you got my phone number"</p>
-				<p class="test-name">Billy Cartel - <span class="job-title">Marketing Director at Swizzle</span></p>
-			</div>
-			<div class="testimonial-content">
-				<img src="img/test-pic-3.jpg" alt="Photograph of Mario Luganis" class="rounded-img"/>
-				<p class="test-quote">"He's a rugged, handsome man whose skills lend more to the glitz and glamour of the catwalk"</p>
-				<p class="test-name">Mario Luganis - <span class="job-title">Head UX Geek at Dongu Labs</span></p>
-			</div>
-		</div>
-	</div>
-
-	<div class="container contact-bg">
-		<div id="contact" class="contact-section">
-			<h2 class="section-name">Contact</h2>
-			<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you</p>
-			<p>Phone<span class="contact-deets">(510) 809-7053</span></p>
-			<p>Email<span class="contact-deets">filice1101@gmail.com</span></p>
-		</div>		
-	</div>
-
-	<footer class="responsive-footer">
-		<span class="my-name-footer">Vincent Filice</span>
-		<a href="" class="to-top-footer">Back to top</a>
-	</footer>
-
-	<footer class="main-footer">
-		<span class="my-name-footer">Vincent Filice</span>
-		<nav class="foot-nav">
-			<ul>
-				<li><a href="#about-me">Home</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#praises">Modest Praises</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</footer>
-
-</body>
+	</body>
 </html>
